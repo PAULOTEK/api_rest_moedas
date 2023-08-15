@@ -1,4 +1,4 @@
-package conversor_api
+package main
 
 import (
 	"conversor_api/internal/api/controller"
@@ -13,7 +13,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func Main() {
+func main() {
 	db, err := sql.Open("mysql", "user:password@tcp(127.0.0.1:3306)/currency_converter")
 	if err != nil {
 		log.Fatal("Error connecting to database:", err)
