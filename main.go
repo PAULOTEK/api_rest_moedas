@@ -1,4 +1,4 @@
-package cmd
+package conversor_api
 
 import (
 	"conversor_api/internal/api/controller"
